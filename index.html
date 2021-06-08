@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .demo1{
+                background-color: aquamarine;
+            }
+            #demo2{
+                background-color: cadetblue;
+            }
+        </style>
+    </head>    
+    <body>
+       <form action="destination.html" method="GET"> 
+        <fieldset class= "demo1">
+            <legend>information personelle </legend>
+            <label for="uname">username:</label>
+            <input type="text" id="uname" name="nom" required autofocus placeholder="votre nom svp">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required  placeholder="votre email svp" title="email">
+            <label for="phone">telephone:</label>
+            <input type="tel" id="phone" name="phone" required  placeholder="votre telephone svp" title="phone">
+            <select name="country" required>
+                <option value="">  </option>
+                <option value="CA">canada</option>
+                <option value="US">USA</option>
+                <option value="MEX">Mexique</option>
+            </select> 
+        </fieldset>
+        <fieldset id="demo2">
+            <legend>
+                detail de reservation  </legend>
+                <label for="DateR">Email:</label>
+            <input type="date" id="DateR" name="date" required  placeholder="date de reservation" min="2021-01-01">
+            <label for="nbv">nombre de visiteur:</label>
+            <input type="number" id="nbv" name="nombre de visiteur" min="1" max="5">
+            <p> est ce que voulez des repas?</p>
+            <label for="avec repas">oui</label>
+            <input type="radio" id="avec repas" name="repas">
+            <label for="pas de repas">non</label>
+            <input type="radio" id="pas de repas" name="repas">
+            <br>
+            <label for="avecbalcon">est ce que avec balcon</label>
+            <input type="checkbox" id="avecbalcon" name="balcon" value="yes" checked >
+            <br>
+            <input type="image" src="imagebouton.jpg" alt="image bouton " >
+        </fieldset>
+       </form>
+    </body>
+    </html>
